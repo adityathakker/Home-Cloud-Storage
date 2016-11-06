@@ -50,7 +50,6 @@ if($result_of_upload_tasks_queue->num_rows <= 0){
 			$result_of_update_task = $conn->query($update_task);
 			}
 		}
-		sleep(8);
 		redirect("execute_from_queue.php");
 	}
 
@@ -86,7 +85,6 @@ if($result_of_upload_tasks_queue->num_rows <= 0){
 			}
 		}
 
-	sleep(8);
 	redirect("execute_from_queue.php");	
 	}
 
